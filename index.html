@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon website" href="img/travel.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <meta name="description" content="Travel Vex تساعدك في الوصول إلى وجهتك بسرعة وراحة – نظام حجز سهل للمسافرين للعمل أو الدراسة أو الترفيه. احجز رحلتك الآن.">
+    <meta name="keywords" content="Travel Vex, حجز رحلات, سفر للعمل, سفر للدراسة, سفر ترفيهي, حجز سهل, نظام حجز سريع">
+    <meta name="author" content="Travel Vex">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (لوسائل التواصل) -->
+    <meta property="og:title" content="Travel Vex – حجز سفر مريح وسريع">
+    <meta property="og:description" content="نظام حجز سهل للمسافرين للعمل أو الدراسة أو الترفيه. وصول سريع وراحة تامة.">
+    <meta property="og:type" content="website">
+    <title>Traval Vex</title>
+</head>
+<body>
+    <header id="header">
+        <img src="travel.png" alt="photo" id="img-header">
+        <h2 id="h2-header">Travel <span id="span-h2-header">Vex</span></h2>
+        <div id="div-header" onclick="op()">
+            <div id="mu"></div>
+            <div id="mu"></div>
+            <div id="mu"></div>
+        </div>
+    </header>
+    <div id="menu">
+        <div id="div-menu">
+            <h3 id="clo" onclick="cl()"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></h3>
+            <h2 id="h2-div-menu">Travel <span id="span-h2-header">Vex</span></h2>
+                <br>
+                <a href="#section-1" id="mo"onclick="home()">الصفحة الرئيسية</a>
+                <br>
+                <a href="#section-2" id="mo" onclick="tra()">حجز رحلات</a>
+                <br>
+                <a href="#section-3" id="mo" onclick="mons()">اجارة سيارات للمناسبات</a>
+                <br>
+        </div>
+    </div>
+    <section id="section-1">
+        <div id="div-section-1">
+            <img id="img-div-section-1" src="travel.png" alt="photo">
+            <h2 id="h2-div-section-1">Travel Vex اهلا بكم مع</h2>
+            <p id="p-div-section-1">سواء كنت مسافر للعمل او الدراسة او الترفية نساعدك في الوصول الي وجهتك بسرعة وراحة من خلال نظام حجز سهل وتجربة مستخدم مميزة</p>
+            <a href="##" id="a-div-section-1" onclick="tra()">احجز رحلتك</a>
+        </div>
+    </section>
+    <!---------------------------صفحة حجز رحله وتفصيلها----------------------------->
+    <section id="section-2">
+        <h2 id="h2-section-2">تفاصيل الرحلة</h2>
+        <div id="div-section-2">
+            <input type="text" name="" id="text-name-section-2" placeholder="اسم مستخدم الرحلة">
+            <br>
+            <input type="tel" name="" oninput="this.value = this.value.replace(/[^\d]/g, '').slice(0,11)" pattern="\d{11}" maxlength="11" id="number-section-2" placeholder="رقم الهاتف" required>
+            <div id="div-input-section-2">
+                <input type="text" name="" id="text-section-2" placeholder="مكان بدء الرحلة">
+                <input type="text" name="" id="text-section-2" placeholder="مكان الوصول">
+            </div>     
+            <select id="sel-section-2" name="car" required>
+                <option>اختر نوع السيارة</option>
+                <option value="car1">ملاكي</option>
+                <option value="car2">مكروباص</option>
+                <option value="car3">ميني باص</option>
+                <option value="car4">باص</option>
+            </select>   
+            <br>
+            <input type="submit" value="ارسال الحجز" id="sub-car-section-2">    
+        </div>
+    </section>
+    <section id="section-3">
+        <h2 id="h2-section-3">سيارة للمناسبات</h2>
+        <div id="div-section-3">
+            <input type="text" name="" id="text-name-section-2" placeholder="اسم مستخدم الرحلة">
+            <br>
+            <input type="tel" name="" oninput="this.value = this.value.replace(/[^\d]/g, '').slice(0,11)" pattern="\d{11}" maxlength="11" id="number-section-2" placeholder="رقم الهاتف" required>
+            <div id="div-input-section-3">
+                <input type="text" name="" id="text-section-3" placeholder="مكان المناسبة">
+                <input type="number" name="" id="text-section-3" placeholder="عدد السيارات">
+            </div>     
+            <select id="sel-section-3" name="car" required>
+                <option>اختر نوع السيارة</option>
+                <option value="car1">ملاكي</option>
+                <option value="car2">مكروباص</option>
+                <option value="car3">ميني باص</option>
+                <option value="car4">باص</option>
+            </select>   
+            <br>
+            <input type="submit" value="ارسال الحجز" id="sub-car-section-3">    
+        </div>
+    </section>
+    <script src="js.js"></script>
+</body>
+</html>
