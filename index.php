@@ -21,7 +21,7 @@
 </head>
 <body>
     <header id="header">
-        <img src="img/travel.png" alt="photo" id="img-header">
+        <img src="travel.png" alt="photo" id="img-header">
         <h2 id="h2-header">Travel <span id="span-h2-header">Vex</span></h2>
         <div id="div-header" onclick="op()">
             <div id="mu"></div>
@@ -34,7 +34,7 @@
             <h3 id="clo" onclick="cl()"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></h3>
             <h2 id="h2-div-menu">Travel <span id="span-h2-header">Vex</span></h2>
                 <br>
-                <a href="" id="mo"onclick="home()">الصفحة الرئيسية</a>
+                <a href="#section-1" id="mo"onclick="home()">الصفحة الرئيسية</a>
                 <br>
                 <a href="#section-2" id="mo" onclick="tra()">حجز رحلات</a>
                 <br>
@@ -44,7 +44,7 @@
     </div>
     <section id="section-1">
         <div id="div-section-1">
-            <img id="img-div-section-1" src="img/travel.png" alt="photo">
+            <img id="img-div-section-1" src="travel.png" alt="photo">
             <h2 id="h2-div-section-1">Travel Vex اهلا بكم مع</h2>
             <p id="p-div-section-1">سواء كنت مسافر للعمل او الدراسة او الترفية نساعدك في الوصول الي وجهتك بسرعة وراحة من خلال نظام حجز سهل وتجربة مستخدم مميزة</p>
             <a href="##" id="a-div-section-1" onclick="tra()">احجز رحلتك</a>
